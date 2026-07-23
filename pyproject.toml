@@ -1,0 +1,17 @@
+[project]
+name = "smart-parking-occupancy"
+version = "0.1.0"
+description = "OpenCV parking occupancy detection with polygon slot editing and optional ML fallback."
+requires-python = ">=3.9"
+dependencies = [
+  "opencv-python",
+  "numpy",
+  "cvzone"
+]
+
+[project.optional-dependencies]
+ml = ["ultralytics"]
+
+[project.scripts]
+parking-detect = "main:main"
+parking-picker = "ParkingSpacePicker:main"

@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
+
+# Local generated files
+*.log
+output/
+runs/
+
+# Large local media can be kept outside git if desired.
+# carPark.mp4
